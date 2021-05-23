@@ -1,0 +1,178 @@
+body{
+    /*background-color: #F4F4F4;*/
+    background-color: hotpink;
+    background-image: linear-gradient(to top, hotpink 120%, pink 340% );
+    background-repeat: round;
+}
+.container{
+    /*background-image:url(image.jpg);*/
+    align-content: center;
+    align-items: center;
+    width: 1022px;
+    height: 620px;
+    margin: auto;
+    border-color: black;
+    box-shadow: 2px 5px 5px 5px;
+    padding: 5px;
+}
+h1{
+    font-family: cursive,sans-serif,monospace;
+    font-size: 20px;
+    /*text-align:center;*/
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+img{
+    
+    height: 75px;
+    width: 75px;
+    float:left;
+    margin-left: 100px;
+    margin-top: 0px;
+    align-content: center;
+    align-items: center;
+    padding: 0px
+}
+.MajorSector{
+    width: 900px;
+    margin: auto;
+}
+li{
+    font-size: 20px;
+}
+nav {
+    margin: 0;
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background-color:darkgrey;
+  padding: 2px;
+  font-family: monospace,sans-serif;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 22%;
+  background-color:darkgrey;
+  height: 300px; /* only for demonstration, should be removed */
+}
+.Button{
+    
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    font-family: monospace;
+}
+.ButtonS,.ButtonR{
+    margin-left: 3px; 
+    width: 90px;
+    font-size: 22px;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+.Button:hover {
+    color:dodgerblue;
+    box-shadow: 1px 1px 1px 1px;
+}
+.ButtonS:hover{
+    color: black;
+    box-shadow: 1px 1px 1px 1px;
+}
+.ButtonR:hover{
+    color: black;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section{
+    box-shadow: 2px 5px 5px 5px;
+    width: 100%;
+    background-color: darkgray;
+}
+.innerDiv{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    float:inherit;
+    width: 99%;
+    margin-top: 10px;
+    
+}
+.container1{
+    align-content: center;
+    align-items: center;
+    width: 720px;
+    height: 340px;
+    background-color: darkgrey;
+    margin: auto;
+    border-color: black;
+    box-shadow: 2px 5px 5px 5px;
+}
+.Date{
+    float:none;
+    margin: auto;
+    width: 88%;
+}
+.Result{
+    float: left;
+    width: 50%;
+    font-family: fantasy;
+    text-align: left;
+    font-size: 25px;
+    padding: 10px;
+    height: 310px;
+}
+footer{
+    background-color:darkgrey;
+    color: black;
+    font-size: 20px;
+    width: 982px;
+    margin: auto;
+    box-shadow: 2px 5px 5px 5px;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: cursive,sans-serif;
+    padding:5px 25px 5px 25px;
+}
+.GB{
+    float: left;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-style: oblique;
+    font-size: 17px;
+}
+.GB:hover{
+    color: yellow;
+    text-decoration:underline;
+    box-shadow: 2px;
+    font-size: 19px;
+}
+.Print{
+    float: right;
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+    font-style: oblique;
+    text-decoration: none;
+}
+.Print:hover{
+    color: yellow;
+    text-decoration:underline;
+    box-shadow: 2px;
+    font-size: 19px;
+}

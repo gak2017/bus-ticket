@@ -1,0 +1,66 @@
+var i=-1,f=0,count=0,j=-1,temp=0,temp1=0;
+var a=[ "Tarnaka","Lalapet","MCH","Moulali","ZTS","ECIL","Chakripuram","Dammaiguda","Nagaram","Rampally" ];
+var opSrc,opDest,opStgs,opFair;
+
+function fun1(clicked)
+{
+	if(i==-1)
+	{
+	
+	i=document.getElementById(clicked).value;
+	temp=i;
+	}
+	else 
+	{
+	j=document.getElementById(clicked).value;
+	temp1=j;
+	}
+	document.getElementById("get").innerHTML=a[i];
+    opSrc=a[i];
+	document.getElementById("get1").innerHTML=a[j];
+    opDest=a[j];
+	
+	var stage=Math.abs(j-i);
+	document.getElementById("get2").innerHTML=stage+"  stages";
+    opStgs=stage;
+	var rs=0;
+	if(stage>=7)
+		{
+			document.getElementById("get3").innerHTML=30;
+            opFair=30;
+		}
+		else if(stage>=4 && stage<=6)
+		{
+			document.getElementById("get3").innerHTML=20;
+            opFair=20;
+			}
+		else if(stage>2 && stage<=3)
+		{
+            document.getElementById("get3").innerHTML=15;
+            opFair=15;
+		}
+		
+		else
+		{
+			document.getElementById("get3").innerHTML=10;
+            opFair=10;
+		}
+}
+function re()
+{
+i=-1;
+j=-1;
+document.getElementById("get").innerHTML=null;
+	document.getElementById("get1").innerHTML=null;
+	}
+	function star()
+	{
+		document.getElementById("get").innerHTML=a[i];
+	document.getElementById("get1").innerHTML=a[j];
+	}
+	function hash()
+	{
+	document.getElementById("get").innerHTML=a[1];
+	document.getElementById("get1").innerHTML=a[0];
+	fun1();
+	}

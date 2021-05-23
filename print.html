@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container1">
+            <nav class="innerDiv">
+                <p>From: <span id="resultSrc"></span>
+                    <script>
+                        document.getElementById("resultSrc").innerHTML=localStorage.getItem("opSrc");
+                    </script>
+                </p>
+                <p>To: <span id="resultDest"></span>
+                    <script>
+                        document.getElementById("resultDest").innerHTML=localStorage.getItem("opDest");
+                    </script>
+                </p>
+                <p>Stages: <span id="resultStages"></span>
+                    <script>
+                        document.getElementById("resultStages").innerHTML=localStorage.getItem("opStgs");
+                    </script>
+                </p>
+                <p>Fair: <span id="resultFair"></span>&nbsp;&#36;
+                    <script>
+                        document.getElementById("resultFair").innerHTML=localStorage.getItem("opFair");
+                    </script>
+                </p>
+                <p>Date: <span id="resultDate"></span>
+                    <script>
+                        document.getElementById("resultDate").innerHTML=localStorage.getItem("opDate");
+                    </script>
+                </p>
+                <p>Date: <span id="resultTime"></span>
+                    <script>
+                        document.getElementById("resultTime").innerHTML=localStorage.getItem("opTime");
+                    </script>
+                </p>
+            </nav>
+            <a href="bus.html" class="GB" style="color: black" "text-decoration: none">Go Back</a>
+            <a href="" class="Print" style="color: black" "text-decoration: none">Print</a>
+        </div>
+    </body>
+
+</html>
